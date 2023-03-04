@@ -41,6 +41,32 @@ main {
 .egg_decoration {
   background: url("./images/mobile/image-transform.jpg");
   height: 300px;
+  background-size: cover;
+}
+
+.your_brand {
+  position: relative;
+}
+.your_brand p {
+  color: hsl(210, 4%, 67%);
+}
+.your_brand a {
+  letter-spacing: 2px;
+  color: hsl(212, 27%, 19%);
+}
+.your_brand a::after {
+  content: "";
+  position: absolute;
+  left: 112px;
+  bottom: 48px;
+  height: 0;
+  width: 150px;
+  border: 5px solid hsla(51, 100%, 49%, 0.697);
+  border-radius: 4px;
+  z-index: -1;
+}
+.your_brand a:hover {
+  color: inherit;
 }
 
 
