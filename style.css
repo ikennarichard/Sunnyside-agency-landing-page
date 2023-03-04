@@ -1,16 +1,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,900;1,9..144,700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
+  font-family: "Fraunces", sans-serif !important;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+p {
   font-family: "Barlow", sans-serif;
-  font-size: 1.125rem;
 }
 
 img {
   max-width: 100%;
 }
 
-header {
-  background-image: url("./images/mobile/image-header.jpg");
+main {
+  width: 375px;
+}
+
+.headline_section {
+  background: url("./images/mobile/image-header.jpg") no-repeat;
+  background-size: contain;
+  height: 900px;
+}
+.headline_section h2 {
+  font-size: 2rem;
+  color: hsl(0, 0%, 100%);
+  letter-spacing: 5px;
+}
+
+.arrow_down {
+  margin-block-start: 6.3em;
 }
 
 
