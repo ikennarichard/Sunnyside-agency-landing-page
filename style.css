@@ -106,6 +106,20 @@ main {
   color: inherit;
 }
 
+.graphic_design {
+  background: url("images/mobile/image-graphic-design.jpg");
+  background-size: cover;
+  height: 600px;
+  color: hsl(167, 40%, 24%);
+}
+
+.photography {
+  background: url("images/mobile/image-photography.jpg");
+  background-size: cover;
+  height: 600px;
+  color: hsl(198, 62%, 26%);
+}
+
 
 
 /*# sourceMappingURL=style.css.map */

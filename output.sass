@@ -35,6 +35,13 @@ $dark-moderate-cyan: hsl(168, 34%, 41%)
     border-radius: 4px 
     z-index: -1
 
+@mixin ad-cards($color)
+  background-size: cover
+  height: 600px
+  color: $color
+  
+  
+
 body
   font-family: 'Fraunces', sans-serif !important
   display: grid
@@ -104,6 +111,14 @@ main
     
   a:hover
     color: inherit
- 
+
+.graphic_design
+  background: url("images/mobile/image-graphic-design.jpg")
+  @include ad-cards($color: $dark-desaturated-cyan)
+
+.photography
+  background: url("images/mobile/image-photography.jpg")
+  @include ad-cards($color: $dark-blue)
+
   
 /*# sourceMappingURL=output.sass.map */
