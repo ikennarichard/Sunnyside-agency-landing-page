@@ -9,9 +9,13 @@ $white: hsl(0, 0%, 100%)
 $soft-red: hsl(7, 99%, 70%)
 $yellow: hsl(51, 100%, 49%)
 $lighter-yellow: hsla(51, 100%, 49%, 0.4)
+$light-pink: rgba(255, 248, 249, 0.464)
 $dark-desaturated-cyan: hsl(167, 40%, 24%)
 $dark-blue: hsl(198, 62%, 26%)
 $dark-moderate-cyan: hsl(168, 34%, 41%) 
+$frannces: 'Fraunces', sans-serif
+$barlow: 'Barlow', sans-serif
+
 
 
 *
@@ -40,17 +44,23 @@ $dark-moderate-cyan: hsl(168, 34%, 41%)
   height: 600px
   color: $color
   
-  
+@mixin testimonials-card()
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  gap: 25px
+  margin-block-start: 2em
 
 body
-  font-family: 'Fraunces', sans-serif !important
+  font-family: $frannces !important
   display: grid
   place-items: center
   min-height: 100vh
   line-height: 1.5
 
 p 
-  font-family: 'Barlow', sans-serif
+  font-family: $barlow
 
 img 
   max-width: 100%
@@ -119,6 +129,30 @@ main
 .photography
   background: url("images/mobile/image-photography.jpg")
   @include ad-cards($color: $dark-blue)
+
+.client_testimonials
+  background-color: $light-pink
+  
+  h2
+   letter-spacing: 2px
+   font-size: 1rem
+   color: $grayish-blue
+
+  & > div
+    @include testimonials-card()
+
+    img
+      width: 60px
+    p
+     width: 75%
+     color: $very-dark-grayish-blue
+    
+    b
+     color: $very-dark-desaturated-blue
+
+    small
+      color: $grayish-blue
+      font-family: $barlow
 
   
 /*# sourceMappingURL=output.sass.map */

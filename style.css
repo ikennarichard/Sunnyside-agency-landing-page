@@ -120,6 +120,37 @@ main {
   color: hsl(198, 62%, 26%);
 }
 
+.client_testimonials {
+  background-color: rgba(255, 248, 249, 0.464);
+}
+.client_testimonials h2 {
+  letter-spacing: 2px;
+  font-size: 1rem;
+  color: hsl(210, 4%, 67%);
+}
+.client_testimonials > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 25px;
+  margin-block-start: 2em;
+}
+.client_testimonials > div img {
+  width: 60px;
+}
+.client_testimonials > div p {
+  width: 75%;
+  color: hsl(213, 9%, 39%);
+}
+.client_testimonials > div b {
+  color: hsl(212, 27%, 19%);
+}
+.client_testimonials > div small {
+  color: hsl(210, 4%, 67%);
+  font-family: "Barlow", sans-serif;
+}
+
 
 
 /*# sourceMappingURL=style.css.map */
