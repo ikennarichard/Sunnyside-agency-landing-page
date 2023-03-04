@@ -16,3 +16,5 @@
 .prettierignore
 
 node_modules/
+
+*.map

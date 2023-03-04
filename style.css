@@ -22,6 +22,10 @@ img {
   max-width: 100%;
 }
 
+article {
+  color: hsl(212, 27%, 19%);
+}
+
 main {
   width: 375px;
 }
@@ -42,6 +46,7 @@ main {
   background: url("./images/mobile/image-transform.jpg");
   height: 300px;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .your_brand {
@@ -61,11 +66,43 @@ main {
   bottom: 48px;
   height: 0;
   width: 150px;
-  border: 5px solid hsla(51, 100%, 49%, 0.697);
+  border: 5px solid hsla(51, 100%, 49%, 0.4);
   border-radius: 4px;
   z-index: -1;
 }
 .your_brand a:hover {
+  color: inherit;
+}
+
+.stand_out_deco {
+  background: url("./images/mobile/image-stand-out.jpg");
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.stand_out {
+  position: relative;
+}
+.stand_out p {
+  color: hsl(210, 4%, 67%);
+}
+.stand_out a {
+  letter-spacing: 2px;
+  color: hsl(212, 27%, 19%);
+}
+.stand_out a::after {
+  content: "";
+  position: absolute;
+  left: 112px;
+  bottom: 48px;
+  height: 0;
+  width: 150px;
+  border: 5px solid pink;
+  border-radius: 4px;
+  z-index: -1;
+}
+.stand_out a:hover {
   color: inherit;
 }
 

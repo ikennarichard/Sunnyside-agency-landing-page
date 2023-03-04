@@ -8,22 +8,32 @@ $grayish-blue: hsl(210, 4%, 67%)
 $white: hsl(0, 0%, 100%)
 $soft-red: hsl(7, 99%, 70%)
 $yellow: hsl(51, 100%, 49%)
+$lighter-yellow: hsla(51, 100%, 49%, 0.4)
 $dark-desaturated-cyan: hsl(167, 40%, 24%)
 $dark-blue: hsl(198, 62%, 26%)
 $dark-moderate-cyan: hsl(168, 34%, 41%) 
-$lighter-yellow: hsla(51, 100%, 49%, 0.697)
+
 
 *
   box-sizing: border-box
   margin: 0
   padding: 0
 
-@mixin cards($bg-color: $white)
-  background-color: $bg-color
-
 @mixin deco()
   height: 300px
   background-size: cover
+  background-repeat: no-repeat
+
+@mixin card-links($color)
+    content: ''
+    position: absolute
+    left: 112px
+    bottom: 48px
+    height: 0
+    width: 150px
+    border: 5px solid $color
+    border-radius: 4px 
+    z-index: -1
 
 body
   font-family: 'Fraunces', sans-serif !important
@@ -37,6 +47,9 @@ p
 
 img 
   max-width: 100%
+
+article 
+  color: $very-dark-desaturated-blue
 
 main
   width: 375px
@@ -67,18 +80,30 @@ main
     color: $very-dark-desaturated-blue
   
   a::after 
-    content: ''
-    position: absolute
-    left: 112px
-    bottom: 48px
-    height: 0
-    width: 150px
-    border: 5px solid $lighter-yellow
-    border-radius: 4px 
-    z-index: -1
-
+    @include card-links($color: $lighter-yellow)
+    
   a:hover
     color: inherit
   
+.stand_out_deco
+ background: url('./images/mobile/image-stand-out.jpg')
+ @include deco()
 
+.stand_out
+  position: relative
+
+  p
+    color: $grayish-blue
+
+  a
+    letter-spacing: 2px
+    color: $very-dark-desaturated-blue
+
+  a::after 
+    @include card-links($color: pink)
+    
+  a:hover
+    color: inherit
+ 
+  
 /*# sourceMappingURL=output.sass.map */
