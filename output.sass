@@ -17,6 +17,9 @@ $dark-moderate-cyan: hsl(168, 34%, 41%)
   margin: 0
   padding: 0
 
+@mixin cards($bg-color: $white)
+  background-color: $bg-color
+
 body
   font-family: 'Fraunces', sans-serif !important
   display: grid
@@ -35,17 +38,17 @@ main
 
 .headline_section 
   background: url("./images/mobile/image-header.jpg") no-repeat
-  background-size: contain
-  height: 900px
+  background-size: cover
+  background-position: center
+  height: 600px
 
   h2 
     font-size: 2rem
     color: $white
     letter-spacing: 5px
 
-.arrow_down
-  margin-block-start: 6.3em
-  
-
+.egg_decoration
+  background: url("./images/mobile/image-transform.jpg") 
+  height: 300px
 
 /*# sourceMappingURL=output.sass.map */

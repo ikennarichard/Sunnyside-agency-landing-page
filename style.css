@@ -28,8 +28,9 @@ main {
 
 .headline_section {
   background: url("./images/mobile/image-header.jpg") no-repeat;
-  background-size: contain;
-  height: 900px;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
 }
 .headline_section h2 {
   font-size: 2rem;
@@ -37,8 +38,9 @@ main {
   letter-spacing: 5px;
 }
 
-.arrow_down {
-  margin-block-start: 6.3em;
+.egg_decoration {
+  background: url("./images/mobile/image-transform.jpg");
+  height: 300px;
 }
 
 
