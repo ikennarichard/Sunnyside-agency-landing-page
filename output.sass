@@ -26,14 +26,14 @@ $light-cyan: hsl(168, 53%, 74%)
 
 @mixin deco()
   height: 300px
-  background-size: cover
+  background-size: 100% 100%
   background-repeat: no-repeat
 
-@mixin card-links($color)
+@mixin card-links-underline($color)
     content: ''
     position: absolute
-    left: 112px
-    bottom: 48px
+    left: -10px
+    bottom: 0
     height: 0
     width: 150px
     border: 5px solid $color
@@ -76,7 +76,6 @@ article
 
 header
   background: url(images/mobile/image-header.jpg)
-  width: 375px
 
   nav
     position: absolute
@@ -118,12 +117,11 @@ header
   
 
 main
-  width: 375px
   position: relative
 
 .headline_section 
   background: url("./images/mobile/image-header.jpg") no-repeat
-  background-size: cover
+  background-size: 100% 100%
   background-position: center
   height: 450px
 
@@ -133,24 +131,23 @@ main
     letter-spacing: 5px
 
 .arrow_down
-  margin-block-start: -2em
+  margin-block-start: -3em
 
 .egg_decoration
   background: url("./images/mobile/image-transform.jpg")
   @include deco()
 
 .your_brand
-  position: relative
-
   p
     color: $grayish-blue
 
   a
     letter-spacing: 2px
     color: $very-dark-desaturated-blue
+    position: relative
   
   a::after 
-    @include card-links($color: $lighter-yellow)
+    @include card-links-underline($color: $lighter-yellow)
     
   a:hover
     color: inherit
@@ -170,7 +167,7 @@ main
     color: $very-dark-desaturated-blue
 
   a::after 
-    @include card-links($color: pink)
+    @include card-links-underline($color: pink)
     
   a:hover
     color: inherit

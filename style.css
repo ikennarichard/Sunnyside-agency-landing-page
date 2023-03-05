@@ -28,7 +28,6 @@ article {
 
 header {
   background: url(images/mobile/image-header.jpg);
-  width: 375px;
 }
 header nav {
   position: absolute;
@@ -69,13 +68,12 @@ header nav ul li a:hover {
 }
 
 main {
-  width: 375px;
   position: relative;
 }
 
 .headline_section {
   background: url("./images/mobile/image-header.jpg") no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: center;
   height: 450px;
 }
@@ -86,31 +84,29 @@ main {
 }
 
 .arrow_down {
-  margin-block-start: -2em;
+  margin-block-start: -3em;
 }
 
 .egg_decoration {
   background: url("./images/mobile/image-transform.jpg");
   height: 300px;
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
-.your_brand {
-  position: relative;
-}
 .your_brand p {
   color: hsl(210, 4%, 67%);
 }
 .your_brand a {
   letter-spacing: 2px;
   color: hsl(212, 27%, 19%);
+  position: relative;
 }
 .your_brand a::after {
   content: "";
   position: absolute;
-  left: 112px;
-  bottom: 48px;
+  left: -10px;
+  bottom: 0;
   height: 0;
   width: 150px;
   border: 5px solid hsla(51, 100%, 49%, 0.4);
@@ -124,7 +120,7 @@ main {
 .stand_out_deco {
   background: url("./images/mobile/image-stand-out.jpg");
   height: 300px;
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
@@ -141,8 +137,8 @@ main {
 .stand_out a::after {
   content: "";
   position: absolute;
-  left: 112px;
-  bottom: 48px;
+  left: -10px;
+  bottom: 0;
   height: 0;
   width: 150px;
   border: 5px solid pink;
