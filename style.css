@@ -25,6 +25,12 @@ img {
 article {
   color: hsl(212, 27%, 19%);
 }
+article > p {
+  width: 75%;
+}
+article > a {
+  position: relative;
+}
 
 header {
   background: url(images/mobile/image-header.jpg);
@@ -32,7 +38,7 @@ header {
 header nav {
   position: absolute;
   top: 110px;
-  width: 91%;
+  width: 100%;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s linear;
@@ -81,6 +87,7 @@ main {
   font-size: 2.5rem;
   color: hsl(0, 0%, 100%);
   letter-spacing: 5px;
+  width: 300px;
 }
 
 .arrow_down {
@@ -100,7 +107,6 @@ main {
 .your_brand a {
   letter-spacing: 2px;
   color: hsl(212, 27%, 19%);
-  position: relative;
 }
 .your_brand a::after {
   content: "";
@@ -124,9 +130,6 @@ main {
   background-repeat: no-repeat;
 }
 
-.stand_out {
-  position: relative;
-}
 .stand_out p {
   color: hsl(210, 4%, 67%);
 }
@@ -151,14 +154,14 @@ main {
 
 .graphic_design {
   background: url("images/mobile/image-graphic-design.jpg");
-  background-size: cover;
+  background-size: 100% 100%;
   height: 600px;
   color: hsl(167, 40%, 24%);
 }
 
 .photography {
   background: url("images/mobile/image-photography.jpg");
-  background-size: cover;
+  background-size: 100% 100%;
   height: 600px;
   color: hsl(198, 62%, 26%);
 }
@@ -201,7 +204,7 @@ main {
 }
 
 .designs > div {
-  background-size: cover;
+  background-size: 100% 100%;
   background-position-x: center;
   background-repeat: no-repeat;
 }

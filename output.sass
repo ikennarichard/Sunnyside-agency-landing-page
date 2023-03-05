@@ -41,7 +41,7 @@ $light-cyan: hsl(168, 53%, 74%)
     z-index: -1
 
 @mixin ad-cards($color)
-  background-size: cover
+  background-size: 100% 100%
   height: 600px
   color: $color
   
@@ -54,7 +54,7 @@ $light-cyan: hsl(168, 53%, 74%)
   margin-block-start: 2em
 
 @mixin designs()
-  background-size: cover
+  background-size: 100% 100%
   background-position-x: center
   background-repeat: no-repeat 
 
@@ -74,13 +74,19 @@ img
 article 
   color: $very-dark-desaturated-blue
 
+  > p 
+    width: 75%
+
+  > a
+    position: relative
+
 header
   background: url(images/mobile/image-header.jpg)
 
   nav
     position: absolute
     top: 110px
-    width: 91%
+    width: 100%
     opacity: 0
     visibility: hidden
     transition: opacity 0.5s linear
@@ -129,6 +135,7 @@ main
     font-size: 2.5rem
     color: $white
     letter-spacing: 5px
+    width: 300px
 
 .arrow_down
   margin-block-start: -3em
@@ -144,7 +151,6 @@ main
   a
     letter-spacing: 2px
     color: $very-dark-desaturated-blue
-    position: relative
   
   a::after 
     @include card-links-underline($color: $lighter-yellow)
@@ -157,8 +163,6 @@ main
  @include deco()
 
 .stand_out
-  position: relative
-
   p
     color: $grayish-blue
 
