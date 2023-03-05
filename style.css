@@ -26,6 +26,11 @@ article {
   color: hsl(212, 27%, 19%);
 }
 
+header {
+  background: url(images/mobile/image-header.jpg);
+  width: 375px;
+}
+
 main {
   width: 375px;
 }
@@ -37,7 +42,7 @@ main {
   height: 600px;
 }
 .headline_section h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: hsl(0, 0%, 100%);
   letter-spacing: 5px;
 }
@@ -149,6 +154,58 @@ main {
 .client_testimonials > div small {
   color: hsl(210, 4%, 67%);
   font-family: "Barlow", sans-serif;
+}
+
+.designs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 200px;
+}
+
+.designs > div {
+  background-size: cover;
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+
+.milkbottles {
+  background-image: url("images/mobile/image-gallery-milkbottles.jpg");
+}
+
+.orange {
+  background-image: url("images/mobile/image-gallery-orange.jpg");
+}
+
+.cone {
+  background-image: url("images/mobile/image-gallery-cone.jpg");
+}
+
+.sugar_cubes {
+  background-image: url("images/mobile/image-gallery-sugar-cubes.jpg");
+}
+
+footer {
+  background-color: hsl(168, 53%, 74%);
+}
+footer b {
+  font-size: 2rem;
+  color: hsl(167, 40%, 24%);
+}
+
+.footer_links a {
+  text-decoration: none;
+  color: hsl(167, 40%, 24%);
+  font-family: "Barlow", sans-serif;
+}
+.footer_links a:hover {
+  color: hsl(167, 40%, 24%);
+}
+
+.social_links {
+  margin-block-start: 5em;
+}
+.social_links a {
+  filter: contrast(1.75);
 }
 
 
