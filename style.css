@@ -34,10 +34,13 @@ article > a {
 
 header {
   background: url(images/mobile/image-header.jpg);
+  position: relative;
 }
 header nav {
   position: absolute;
   top: 110px;
+  left: 0;
+  right: 0;
   width: 100%;
   opacity: 0;
   visibility: hidden;
