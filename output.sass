@@ -78,19 +78,62 @@ header
   background: url(images/mobile/image-header.jpg)
   width: 375px
 
+  nav
+    position: absolute
+    top: 110px
+    width: 91%
+    opacity: 0
+    visibility: hidden
+    transition: opacity 0.5s linear
+
+    ul
+
+      li
+
+        a
+         text-decoration: none
+         font-family: $barlow
+         color: $dark-grayish-blue
+         font-size: 1.2rem
+
+        a:hover
+          color: inherit
+
+.contact
+  color: $very-dark-desaturated-blue
+  font-family: $frannces
+
+.triangle
+  position: absolute
+  top: -25px
+  right: 0
+  width: 0
+  height: 0
+  border-left: 25px solid transparent
+  border-bottom: 25px solid #fff
+
+.show
+  opacity: 1
+  visibility: visible
+  
+
 main
   width: 375px
+  position: relative
 
 .headline_section 
   background: url("./images/mobile/image-header.jpg") no-repeat
   background-size: cover
   background-position: center
-  height: 600px
+  height: 450px
 
   h2 
     font-size: 2.5rem
     color: $white
     letter-spacing: 5px
+
+.arrow_down
+  margin-block-start: -2em
 
 .egg_decoration
   background: url("./images/mobile/image-transform.jpg")
