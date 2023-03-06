@@ -92,8 +92,13 @@ header
     opacity: 0
     visibility: hidden
     transition: opacity 0.5s linear
+    background-color: $white
 
     ul
+      display: flex
+      flex-direction: column
+      gap: 15px
+      align-items: center
 
       li
 
@@ -109,6 +114,11 @@ header
 .contact
   color: $very-dark-desaturated-blue
   font-family: $frannces
+
+.contact_list
+  background-color: $yellow
+  padding: 1em
+  padding-inline: 2em
 
 .triangle
   position: absolute
@@ -262,6 +272,33 @@ footer
     grid-template-columns: repeat(2, 1fr)
     grid-template-areas:"header header" "your-brand egg" "cup audience" "graphic-design photography" "testimonial testimonial" "designs designs" "footer footer"
     grid-auto-rows: auto
+  
+  .hamburger_icon
+    display: none
+  
+  header nav
+    visibility: visible
+    opacity: 1
+    background-color: transparent
+
+    ul
+      flex-direction: row
+      position: absolute
+      right: 0
+      top: -6.2em
+      gap: 2em
+    
+      li a
+        list-style: none
+        color: $white
+  
+  .contact_list
+    padding: .7em
+    padding-inline: 1.3em
+    background-color: $white !important
+
+  .triangle
+    display: none
 
   .headline_section 
     background: url("./images/desktop/image-header.jpg") no-repeat
@@ -293,6 +330,7 @@ footer
     grid-area: heading
 
   .designs
+    grid-template-columns: repeat(4, 1fr)
     grid-area: designs
 
 /*# sourceMappingURL=output.sass.map */

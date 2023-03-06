@@ -44,6 +44,13 @@ header nav {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s linear;
+  background-color: hsl(0, 0%, 100%);
+}
+header nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
 }
 header nav ul li a {
   text-decoration: none;
@@ -58,6 +65,12 @@ header nav ul li a:hover {
 .contact {
   color: hsl(212, 27%, 19%);
   font-family: "Fraunces", sans-serif;
+}
+
+.contact_list {
+  background-color: hsl(51, 100%, 49%);
+  padding: 1em;
+  padding-inline: 2em;
 }
 
 .triangle {
@@ -261,6 +274,33 @@ footer b {
     grid-template-areas: "header header" "your-brand egg" "cup audience" "graphic-design photography" "testimonial testimonial" "designs designs" "footer footer";
     grid-auto-rows: auto;
   }
+  .hamburger_icon {
+    display: none;
+  }
+  header nav {
+    visibility: visible;
+    opacity: 1;
+    background-color: transparent;
+  }
+  header nav ul {
+    flex-direction: row;
+    position: absolute;
+    right: 0;
+    top: -6.2em;
+    gap: 2em;
+  }
+  header nav ul li a {
+    list-style: none;
+    color: hsl(0, 0%, 100%);
+  }
+  .contact_list {
+    padding: 0.7em;
+    padding-inline: 1.3em;
+    background-color: hsl(0, 0%, 100%) !important;
+  }
+  .triangle {
+    display: none;
+  }
   .headline_section {
     background: url("./images/desktop/image-header.jpg") no-repeat;
     background-size: 100% 100%;
@@ -291,6 +331,7 @@ footer b {
     grid-area: heading;
   }
   .designs {
+    grid-template-columns: repeat(4, 1fr);
     grid-area: designs;
   }
 }
