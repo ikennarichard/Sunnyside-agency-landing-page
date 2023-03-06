@@ -72,6 +72,14 @@ header nav ul li a:hover {
   padding: 1em;
   padding-inline: 2em;
 }
+.contact_list:hover {
+  background-color: rgba(117, 207, 255, 0.932) !important;
+  cursor: pointer;
+  color: hsl(0, 0%, 100%) !important;
+}
+.contact_list:hover a {
+  color: hsl(0, 0%, 100%) !important;
+}
 
 .triangle {
   position: absolute;
@@ -256,8 +264,9 @@ footer b {
   color: hsl(167, 40%, 24%);
   font-family: "Barlow", sans-serif;
 }
-.footer_links a:hover {
-  color: hsl(167, 40%, 24%);
+
+footer nav a:hover {
+  color: hsl(0, 0%, 100%) !important;
 }
 
 .social_links {
@@ -265,6 +274,10 @@ footer b {
 }
 .social_links a {
   filter: contrast(1.75);
+}
+
+footer div a:hover {
+  filter: brightness(0) invert(1);
 }
 
 @media (min-width: 800px) {
@@ -296,14 +309,6 @@ footer b {
     padding: 0.7em;
     padding-inline: 1.3em;
     background-color: hsl(0, 0%, 100%) !important;
-  }
-  .contact_list:hover {
-    background-color: rgba(117, 207, 255, 0.932) !important;
-    cursor: pointer;
-    color: hsl(0, 0%, 100%) !important;
-  }
-  .contact_list:hover a {
-    color: hsl(0, 0%, 100%) !important;
   }
   .triangle {
     display: none;

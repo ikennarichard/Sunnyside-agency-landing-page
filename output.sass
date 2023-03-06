@@ -120,6 +120,14 @@ header
   padding: 1em
   padding-inline: 2em
 
+  &:hover
+    background-color: rgba(117, 207, 255, 0.932) !important
+    cursor: pointer
+    color: $white !important
+
+  &:hover a
+    color: $white !important
+
 .triangle
   position: absolute
   top: -25px
@@ -257,13 +265,16 @@ footer
     color: $dark-desaturated-cyan
     font-family: $barlow
 
-    &:hover
-      color: $dark-desaturated-cyan
+footer nav a:hover
+  color: $white !important
   
 .social_links
   margin-block-start: 5em
   a
     filter: contrast(1.75)
+
+footer div a:hover
+  filter: brightness(0) invert(1)
 
 @media (min-width: 800px)
 
@@ -295,14 +306,6 @@ footer
     padding: .7em
     padding-inline: 1.3em
     background-color: $white !important
-
-    &:hover
-      background-color: rgba(117, 207, 255, 0.932) !important
-      cursor: pointer
-      color: $white !important
-
-    &:hover a
-      color: $white !important
 
   .triangle
     display: none
@@ -339,4 +342,6 @@ footer
   .designs
     grid-template-columns: repeat(4, 1fr)
     grid-area: designs
+
+
 /*# sourceMappingURL=output.sass.map */
