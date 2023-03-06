@@ -175,6 +175,10 @@ main {
   color: inherit;
 }
 
+.learn_more:hover::after {
+  filter: saturate(4);
+}
+
 .graphic_design {
   background: url("images/mobile/image-graphic-design.jpg");
   background-size: 100% 100%;
