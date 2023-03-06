@@ -289,13 +289,20 @@ footer
       gap: 2em
     
       li a
-        list-style: none
         color: $white
   
   .contact_list
     padding: .7em
     padding-inline: 1.3em
     background-color: $white !important
+
+    &:hover
+      background-color: rgba(117, 207, 255, 0.932) !important
+      cursor: pointer
+      color: $white !important
+
+    &:hover a
+      color: $white !important
 
   .triangle
     display: none

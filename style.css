@@ -290,13 +290,20 @@ footer b {
     gap: 2em;
   }
   header nav ul li a {
-    list-style: none;
     color: hsl(0, 0%, 100%);
   }
   .contact_list {
     padding: 0.7em;
     padding-inline: 1.3em;
     background-color: hsl(0, 0%, 100%) !important;
+  }
+  .contact_list:hover {
+    background-color: rgba(117, 207, 255, 0.932) !important;
+    cursor: pointer;
+    color: hsl(0, 0%, 100%) !important;
+  }
+  .contact_list:hover a {
+    color: hsl(0, 0%, 100%) !important;
   }
   .triangle {
     display: none;
