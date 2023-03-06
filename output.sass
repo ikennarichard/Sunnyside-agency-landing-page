@@ -25,7 +25,7 @@ $light-cyan: hsl(168, 53%, 74%)
   padding: 0
 
 @mixin deco()
-  height: 300px
+  height: 380px
   background-size: 100% 100%
   background-repeat: no-repeat
 
@@ -81,7 +81,6 @@ article
     position: relative
 
 header
-  background: url(images/mobile/image-header.jpg)
   position: relative
 
   nav
@@ -188,6 +187,9 @@ main
   @include ad-cards($color: $dark-blue)
 
 .client_testimonials
+  display: flex
+  flex-direction: column
+  align-items: center
   background-color: $light-pink
   
   h2
@@ -252,5 +254,45 @@ footer
   margin-block-start: 5em
   a
     filter: contrast(1.75)
+
+@media (min-width: 800px)
+
+  main
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-areas:"header header" "your-brand egg" "cup audience" "graphic-design photography" "testimonial testimonial" "designs designs" "footer footer"
+    grid-auto-rows: auto
+
+  .headline_section 
+    background: url("./images/desktop/image-header.jpg") no-repeat
+    background-size: 100% 100%
+    background-position: center
+    grid-area: header
+
+    h2
+      width: 75%
+      margin-top: none
+  
+  .arrow_down
+    height: 90px
+    padding-top: 20px
+  
+  .egg_decoration
+    grid-area: egg
+  
+  .your_brand
+    grid-area: your-brand
+  
+  .client_testimonials
+    display: grid
+    grid-template-columns: repeat(3,1fr)
+    grid-template-areas: "heading heading heading" "items items items"
+    grid-area: testimonial
+  
+  .client_testimonials h2
+    grid-area: heading
+
+  .designs
+    grid-area: designs
 
 /*# sourceMappingURL=output.sass.map */
