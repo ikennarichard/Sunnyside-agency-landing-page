@@ -259,7 +259,9 @@ footer
     font-size: 2rem
     color: $dark-desaturated-cyan
 
-.footer_links
+.footer_links > ul
+  display: flex
+  justify-content: space-around
   a
     text-decoration: none
     color: $dark-desaturated-cyan
@@ -342,6 +344,10 @@ footer div a:hover
   .designs
     grid-template-columns: repeat(4, 1fr)
     grid-area: designs
+
+  .footer_links ul
+    justify-content: center
+    gap: 3em
 
 
 /*# sourceMappingURL=output.sass.map */
